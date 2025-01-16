@@ -36,8 +36,10 @@ def menu_principal():
             mostrar_saldo(saldo)
         elif opcion==2:
             saldo+=depositar()
+            print(f"\n¡Deposito Exitoso!: {saldo:.2f}")
         elif opcion ==3:
             saldo-=retirar(saldo)
+            print(f"\n¡Retiro Exitoso!: {saldo:.2f}")
         elif opcion == 4:
             en_ejecucion=False
             print('Hasta Luego')
